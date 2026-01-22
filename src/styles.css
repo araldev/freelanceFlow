@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/public/fonts/Manrope-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/public/fonts/Manrope-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/public/fonts/Manrope-ExtraBold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/public/fonts/Manrope-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/public/fonts/Manrope-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/public/fonts/Manrope-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/public/fonts/Manrope-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    font-family: Manrope, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: var(--color-foreground);
+    background-color: var(--color-background);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+@theme inline {
+  /* Fondo general y texto principal */
+  --color-background: #fcfcfd;
+  /* Tu fondo primario */
+  --color-foreground: #4b94a3;
+  /* Tu texto color */
+
+  /* Botones (Uso de los colores que diste) */
+  --color-primary: #247d8f;
+  /* Fondo botones */
+  --color-primary-foreground: #a8ccd3;
+  /* Texto botones */
+
+  /* El Acento (La pieza que faltaba) */
+  --color-accent: #e99071;
+  /* El coral para llamar la atención */
+  --color-accent-foreground: #ffffff;
+  /* Blanco para máxima legibilidad */
+
+  /* Colores neutros/muted para detalles */
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b;
+}
