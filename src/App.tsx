@@ -1,12 +1,13 @@
 import { Routes, Route } from 'react-router'
+import { AuthLayout } from './auth/components/AuthLayout'
+import { NotFound404 } from './pages/NotFound404.tsx'
 
 export default function App() {
   return (
     <>
-      <h1>Esta es mi App</h1>
-
       <Routes>
-        <Route path="/" element={} />
+        <Route path="/" element={<AuthLayout/>} />
+        <Route path="*" element={<NotFound404/>} />
       </Routes>
     </>
   )
