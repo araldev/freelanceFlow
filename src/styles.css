@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/public/fonts/Manrope-Bold.woff2') format('woff2');
+  src: url('/fonts/Manrope-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/public/fonts/Manrope-Light.woff2') format('woff2');
+  src: url('/fonts/Manrope-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/public/fonts/Manrope-ExtraBold.woff2') format('woff2');
+  src: url('/fonts/Manrope-ExtraBold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/public/fonts/Manrope-ExtraLight.woff2') format('woff2');
+  src: url('/fonts/Manrope-ExtraLight.woff2') format('woff2');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -34,7 +34,7 @@
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/public/fonts/Manrope-Medium.woff2') format('woff2');
+  src: url('/fonts/Manrope-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -42,7 +42,7 @@
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/public/fonts/Manrope-Regular.woff2') format('woff2');
+  src: url('/fonts/Manrope-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -50,7 +50,7 @@
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/public/fonts/Manrope-SemiBold.woff2') format('woff2');
+  src: url('/fonts/Manrope-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -91,7 +91,7 @@
   /* Botones (Uso de los colores que diste) */
   --color-primary: #247d8f;
   /* Fondo botones */
-  --color-primary-foreground: #a8ccd3;
+  --color-primary-foreground: #e6f7fc;
   /* Texto botones */
 
   /* El Acento (La pieza que faltaba) */
