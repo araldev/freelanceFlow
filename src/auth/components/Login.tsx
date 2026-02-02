@@ -28,13 +28,13 @@ export function Login () {
         </div>
 
         <div className='max-w-120 w-full flex flex-col justify-center items-left'>
-          <label className='font-semibold flex justify-between items-center' htmlFor={idPassword}>Password <NavLinkCustom to={'/forgot-password'} className='text-sm'>Forgot password?</NavLinkCustom></label>
+          <label className='font-semibold flex justify-between items-center' htmlFor={idPassword}>Password <NavLinkCustom to={'/auth/forgot-password'} className='text-sm'>Forgot password?</NavLinkCustom></label>
           
           <input className='w-full border-2 border-muted text-muted-foreground p-2 rounded-2xl focus:outline-1 outline-primary' id={idPassword} placeholder='*******' name="password" type="password" />
         </div>
 
         <button className="max-w-120 w-full hover:scale-105 active:scale-95 cursor-pointer transition-transform font-medium shadow-lg p-4 rounded-4xl bg-primary text-primary-foreground">Sign in</button>
-        <span className="self-center">Don`t have an account? <NavLinkCustom className="font-bold" to={'/signup'}>Sign up for free </ NavLinkCustom> </span>
+        <span className="self-center">Don`t have an account? <NavLinkCustom className="font-bold" to={'/auth/signup'}>Sign up for free </ NavLinkCustom> </span>
       </form>
     </article>
   )

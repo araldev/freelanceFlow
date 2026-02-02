@@ -1,19 +1,20 @@
-import { Routes, Route } from 'react-router'
-import { AuthLayout } from './auth/components/AuthLayout.tsx'
-import { Login } from './auth/components/Login.tsx'
-import { SignUp } from './auth/components/SignUp.tsx'
-import { ForgotPassword } from './auth/components/ForgotPassword.tsx'
+import { Routes, Route, Navigate } from 'react-router'
 import { NotFound404 } from './pages/NotFound404.tsx'
+import { ProtectedRoute } from './shared/components/ProtectedRoute.tsx'
+import { AuthRoutes } from './auth/routes/AuthRoutes.tsx'
 
 export default function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<AuthLayout/>} >
-          <Route index element={<Login/>}></Route>
-          <Route path='signup' element={<SignUp/>}></Route>
-          <Route path='forgot-password' element={<ForgotPassword/>}></Route>
-        </ Route>
+        <Route path="/auth/*" element={<AuthRoutes/>}></Route>
+
+        <Route path="/app" element={<ProtectedRoute/>}>
+          <Route path='dashboard' element={<NotFound404/>}></Route>
+        </Route>
+
+        <Route path="/" element={<Navigate to={'/auth/login'} />}></Route>
+
         <Route path="*" element={<NotFound404/>} />
       </Routes>
     </>
