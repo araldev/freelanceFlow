@@ -2,6 +2,7 @@ import { useId } from 'react'
 import { UserSvg } from '../../shared/components/UserSvg'
 import { NavLinkCustom } from '../../shared/components/NavLinkCustom'
 import { Logo } from '../../shared/components/Logo'
+import { PathnameAuth } from '../schemes/pathname'
 
 export function SignUp () {
   const idName = useId()
@@ -45,7 +46,7 @@ export function SignUp () {
         </div>
 
         <button className="max-w-120 w-full hover:scale-105 active:scale-95 cursor-pointer transition-transform font-medium shadow-lg p-4 rounded-4xl bg-primary text-primary-foreground">Sign up</button>
-        <span className="self-center">Already have an account? <NavLinkCustom className="font-bold" to={'/'}>Sign in</ NavLinkCustom> </span>
+        <span className="self-center">Already have an account? <NavLinkCustom className="font-bold" to={PathnameAuth.Login}>Sign in</ NavLinkCustom> </span>
       </form>
     </article>
   )

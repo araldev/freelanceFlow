@@ -11,8 +11,8 @@ export default function App() {
         <Route path="/" element={<Navigate to={'/auth/login'} />}></Route>
         <Route path="/auth/*" element={<AuthRoutes/>}></Route>
 
-        <Route path="/app" element={<ProtectedRoute/>}>
-          <Route path='*' element={<LoggedRoutes/>}></Route>
+        <Route element={<ProtectedRoute/>}>
+          <Route path='/app/*' element={<LoggedRoutes/>}></Route>
         </Route>
 
         <Route path="*" element={<NotFound404/>} />

@@ -1,6 +1,7 @@
 import { useId } from 'react'
 import { NavLinkCustom } from '../../shared/components/NavLinkCustom'
 import { Logo } from '../../shared/components/Logo'
+import { PathnameAuth } from '../schemes/pathname'
 
 export function ForgotPassword() {
   const idEmail = useId()
@@ -22,7 +23,7 @@ export function ForgotPassword() {
         </div>
 
         <button className="max-w-120 w-full hover:scale-105 active:scale-95 cursor-pointer transition-transform font-medium shadow-lg p-4 rounded-4xl bg-primary text-primary-foreground">Send Reset Link</button>
-        <span className="self-center">Remember your password? <NavLinkCustom className="font-bold" to={'/'}>Sign in</ NavLinkCustom> </span>
+        <span className="self-center">Remember your password? <NavLinkCustom className="font-bold" to={PathnameAuth.Login}>Sign in</ NavLinkCustom> </span>
       </form>
     </article>
   )

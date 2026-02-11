@@ -2,6 +2,7 @@ import { useId } from 'react'
 import { UserSvg } from '../../shared/components/UserSvg'
 import { NavLinkCustom } from '../../shared/components/NavLinkCustom'
 import { Logo } from '../../shared/components/Logo'
+import { PathnameAuth } from '../schemes/pathname'
 
 export function Login () {
   const idEmail = useId()
@@ -28,7 +29,7 @@ export function Login () {
         </div>
 
         <div className='max-w-120 w-full flex flex-col justify-center items-left'>
-          <label className='font-semibold flex justify-between items-center' htmlFor={idPassword}>Password <NavLinkCustom to={'/auth/forgot-password'} className='text-sm'>Forgot password?</NavLinkCustom></label>
+          <label className='font-semibold flex justify-between items-center' htmlFor={idPassword}>Password <NavLinkCustom to={PathnameAuth.ForgotPassword} className='text-sm'>Forgot password?</NavLinkCustom></label>
           
           <input className='w-full border-2 border-muted text-muted-foreground p-2 rounded-2xl focus:outline-1 outline-primary' id={idPassword} placeholder='*******' name="password" type="password" />
         </div>
