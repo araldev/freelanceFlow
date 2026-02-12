@@ -8,30 +8,40 @@ import { Trend } from '../../shared/schemes/Trend'
 
 export function StateCard ({ type = TypeStateCard.Revenue, className, ...props }: HTMLAttributes<HTMLElement> & {type?: TypeStateCard}) {
   return (
-    <article className={`${className}`} {...props}>
-
+    <>
       {type === TypeStateCard.Revenue && 
-      <header>
-        <div>
-          <CurrencyIcon currency={Currency.Euro}/>
-        </div>
+      <article className={`shadow-lg bg-primary text-primary-foreground h-40 w-80 rounded-3xl p-8 flex flex-col gap-3 ${className}`} {...props}>
+        <header className="flex justify-between">
+          <div className="bg-background/50 rounded-full p-1 text-primary-foreground backdrop-blur-3xl">
+            <CurrencyIcon currency={Currency.Euro}/>
+          </div>
+
+          <div className="flex gap-1 bg-background/50 rounded-full p-1 text-primary-foreground backdrop-blur-3xl">
+            <TrendIcon trend={Trend.Up} />
+            <data value="15">+15%</data>
+          </div>
+        </header>
 
         <div>
-          <TrendIcon trend={Trend.Up} />
+          <p className="font-light text-lg">Total Revenue</p>
+          <data className="text-2xl font-bold" value="12000">12000€</data>
         </div>
-      </header>}
+      </article>}
 
       {type === TypeStateCard.ActiveProjects && 
-      <header>
-        <div >
-          <ProjectsIcon/>
-        </div>
+      <article className={`shadow-lg bg-primary text-primary-foreground h-40 w-80 rounded-3xl p-8 flex flex-col gap-3 ${className}`} {...props}>
+        <header>
+          <div className="bg-background/50 rounded-full p-1 text-primary-foreground backdrop-blur-3xl w-fit">
+            <ProjectsIcon/>
+          </div>
+        </header>
 
         <div>
-
+          <p className="font-light text-lg">Active Projects</p>
+          <data className="text-2xl font-bold" value="4">4</data>
         </div>
-      </header> }
+      </article>}
+    </>
 
-    </article>
   )
 }

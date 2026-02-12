@@ -1,11 +1,56 @@
 import type { HTMLAttributes } from 'react'
 import { StateCard } from './StateCard'
 import { TypeStateCard } from '../schemes/TypeStateCard'
+import { ProfileIcon } from '../../assets/ProfileIcon'
+import { NotificationsIcon } from '../../assets/NotificationsIcon'
+import { ButtonAction } from './ButtonAction'
+import { NavLinkCustom } from '../../shared/components/NavLinkCustom'
+import { PathnameApp } from '../schemes/pathname'
+import { ActivityBadge } from './ActivityBadge'
 
 export function Dashboard ({ className, ...props }: HTMLAttributes<HTMLElement>) {
   return (
-    <section className={`${className}`} {...props}>
-      <StateCard type={TypeStateCard.Revenue}/>
-    </section>
+    <main className={`bg-muted min-h-dvh flex flex-col gap-4 ${className}`} {...props}>
+      <section className="flex w-full h-20 justify-left gap-4 items-center p-6">
+        <div className="relative w-10 h-10 bg-amber-50 rounded-full flex justify-center items-center backdrop-blur-2xl p-2">
+          <ProfileIcon/>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-green-500 rounded-full"></div>
+        </div>
+
+        <div className='leading-4 flex flex-col gap-0 h-fit'>
+          <p><small>Good Morning.</small></p>
+          <p><strong>Arturo</strong></p>
+        </div>
+
+        <NotificationsIcon className="shadow-md active:scale-95 hover:scale-105 transition-transform cursor-pointer ml-auto w-10 h-10 bg-primary text-primary-foreground p-2 rounded-full"/>
+      </section>
+
+      <section className="flex gap-10 p-6">
+        <StateCard type={TypeStateCard.Revenue}/>
+        <StateCard type={TypeStateCard.ActiveProjects}/>
+      </section>
+
+      <section className="flex flex-col w-full justify-center gap-4 items-left p-6">
+        <h3 className="font-semibold text-black text-lg">Quick Actions</h3>
+
+        <div className="flex gap-4">
+          <ButtonAction as='button'>+ New Invoice</ButtonAction>
+          <ButtonAction as='button'>+ Add Client</ButtonAction>
+        </div>
+      </section>
+
+      <section className="flex flex-col w-full justify-center gap-4 items-left p-6">
+        <div className="flex justify-between items-center">
+          <h3 className="font-semibold text-black text-lg">Recent Activity</h3>
+          <NavLinkCustom to={`${PathnameApp.Dashboard}/all-activity`}>See all</NavLinkCustom>
+        </div>
+
+        <div className="flex flex-col gap-4 w-full">
+          <ActivityBadge/>
+          <ActivityBadge/>
+          <ActivityBadge/>
+        </div>
+      </section>
+    </main>
   )
 }
