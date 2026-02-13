@@ -1,6 +1,6 @@
 import { useId } from 'react'
 import { NavLinkCustom } from '../../shared/components/NavLinkCustom'
-import { Logo } from '../../shared/components/Logo'
+import { Logo } from '../../assets/Logo'
 import { PathnameAuth } from '../schemes/pathname'
 
 export function ForgotPassword() {

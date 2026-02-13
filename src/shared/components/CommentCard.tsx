@@ -1,4 +1,4 @@
-import { UserSvg } from '../../shared/components/UserSvg.tsx'
+import { UserSvg } from '../../assets/UserSvg.tsx'
 import type { HTMLProps } from 'react'
 
 export function CommentCard({ className, ...props }: HTMLProps<HTMLElement>) {

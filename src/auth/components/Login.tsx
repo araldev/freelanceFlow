@@ -1,7 +1,7 @@
 import { useId } from 'react'
-import { UserSvg } from '../../shared/components/UserSvg'
+import { UserSvg } from '../../assets/UserSvg'
 import { NavLinkCustom } from '../../shared/components/NavLinkCustom'
-import { Logo } from '../../shared/components/Logo'
+import { Logo } from '../../assets/Logo'
 import { PathnameAuth } from '../schemes/pathname'
 
 export function Login () {

@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from 'react'
+import type { ComponentPropsWithRef, ElementType } from 'react'
 import { NavLinkCustom } from '../../shared/components/NavLinkCustom'
 import { PathnameApp } from '../schemes/pathname'
 import { DashboardIcon } from '../../assets/DashboardIcon'
@@ -7,9 +7,9 @@ import { InvoicesIcon } from '../../assets/InvoicesIcon'
 import { ClientIcon } from '../../assets/ClientIcon'
 import { ProfileIcon } from '../../assets/ProfileIcon'
 
-export function NavBar ({ className, ...props }: HTMLAttributes<HTMLElement>) {
+export function NavBar ({ className, ref, ...props }: ComponentPropsWithRef<ElementType>) {
   return (
-    <aside className={`z-10 fixed bottom-0 left-0 w-full bg-background backdrop-blur-md border-t border-foreground ${className}`} {...props}>
+    <aside ref={ref} className={`z-20 w-full h-fit bg-background backdrop-blur-md border-t border-foreground ${className}`} {...props}>
       <nav>
         <ul className="flex items-center w-full h-fit justify-around p-6">
 

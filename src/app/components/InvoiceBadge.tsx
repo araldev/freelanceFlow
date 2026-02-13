@@ -27,13 +27,13 @@ export function InvoiceBadge ({ state = InvoiceState.Pending, ref,  className, .
   const date = new Date()
 
   return (
-    <article ref={ref} className={`bg-muted text-foreground p-4 rounded-2xl overflow-hidden flex flex-col justify-center items center gap-4 w-full ${className}`} {...props}>
+    <article ref={ref} className={`shrink-0 bg-muted text-foreground p-4 rounded-2xl overflow-hidden flex flex-col justify-center items center gap-4 w-full ${className}`} {...props}>
       <div className="flex justify-left items-center gap-4">
         <data className="text-muted-foreground" value="id_actura">Id Factura</data>
 
         <InvoiceStateBadge state={state}/>
 
-        <DotsIcon className="ml-auto cursor-pointer flex justify-center items-center p-1 w-8 h-8"/>
+        <DotsIcon className="ml-auto cursor-pointer hover:scale-105 active:scale-95 transition-transform flex justify-center items-center p-1 w-8 h-8"/>
       </div>
 
       <p className="font-semibold text-xl"><strong>Nombre Empresa</strong></p>

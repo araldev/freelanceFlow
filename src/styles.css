@@ -79,7 +79,31 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  .container-area {
+    display: grid;
+    max-height: 100dvh;
+    height: 100dvh;
+    width: 100%;
+    overflow: hidden;
+    grid-template-areas: 
+    "main-area"
+    "nav-area";
+
+    grid-template-rows: 1fr auto;
+  }
+  
+  .main-area {
+    overflow-y: auto;
+    grid-area: main-area;
+  }
+  
+  .nav-area {
+    grid-area: nav-area;
+  }
 }
+
+
 
 @theme inline {
   /* Fondo general y texto principal */

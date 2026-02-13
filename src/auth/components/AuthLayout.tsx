@@ -1,5 +1,5 @@
 import background from '../../../assets/fondo_home.png'
-import { Logo } from '../../shared/components/Logo.tsx'
+import { Logo } from '../../assets/Logo.tsx'
 import { NavLinkCustom } from '../../shared/components/NavLinkCustom.tsx'
 import { CommentCard } from '../../shared/components/CommentCard.tsx'
 import { Outlet } from 'react-router'
