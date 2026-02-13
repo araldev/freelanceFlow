@@ -7,7 +7,7 @@ import { Clients } from '../app/pages/Clients/Clients'
 import { Profile } from '../app/pages/Profile/Profile'
 import { PathnameApp } from '../app/schemes/pathname'
 
-export function LoggedRoutes() {
+export function AppRoutes() {
   return (
     <Routes>
       <Route element={<AppLayout/>}>
