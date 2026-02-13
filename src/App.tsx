@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router'
-import { NotFound404 } from './pages/NotFound404.tsx'
+import { NotFound404 } from './shared/pages/NotFound404'
 import { ProtectedRoute } from './shared/components/ProtectedRoute.tsx'
 import { AuthRoutes } from './routes/AuthRoutes.tsx'
 import { LoggedRoutes } from './routes/LoggedRoutes.tsx'

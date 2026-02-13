@@ -1,12 +1,12 @@
 import type { HTMLAttributes } from 'react'
-import { StateCard } from './StateCard'
-import { TypeStateCard } from '../schemes/TypeStateCard'
-import { ProfileIcon } from '../../assets/ProfileIcon'
-import { NotificationsIcon } from '../../assets/NotificationsIcon'
-import { ButtonAction } from './ButtonAction'
-import { NavLinkCustom } from '../../shared/components/NavLinkCustom'
-import { PathnameApp } from '../schemes/pathname'
-import { ActivityBadge } from './ActivityBadge'
+import { StateCard } from '../../components/StateCard'
+import { TypeStateCard } from '../../schemes/TypeStateCard'
+import { ProfileIcon } from '../../../assets/ProfileIcon'
+import { NotificationsIcon } from '../../../assets/NotificationsIcon'
+import { ButtonAction } from '../../components/ButtonAction'
+import { NavLinkCustom } from '../../../shared/components/NavLinkCustom'
+import { PathnameApp } from '../../schemes/pathname'
+import { ActivityBadge } from '../../components/ActivityBadge'
 
 export function Dashboard ({ className, ...props }: HTMLAttributes<HTMLElement>) {
   return (
