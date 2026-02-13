@@ -8,7 +8,7 @@ export default function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Navigate to={'/auth/login'} />}></Route>
+        <Route path="/*" element={<Navigate to={'/auth/login'} />}></Route>
         <Route path="/auth/*" element={<AuthRoutes/>}></Route>
 
         <Route element={<ProtectedRoute/>}>

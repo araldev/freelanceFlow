@@ -1,7 +1,6 @@
 import { StateCard } from '../../components/StateCard'
 import { TypeStateCard } from '../../schemes/TypeStateCard'
 import { ProfileIcon } from '../../../assets/ProfileIcon'
-import { NotificationsIcon } from '../../../assets/NotificationsIcon'
 import { ButtonAction } from '../../components/ButtonAction'
 import { NavLinkCustom } from '../../../shared/components/NavLinkCustom'
 import { PathnameApp } from '../../schemes/pathname'
@@ -10,7 +9,7 @@ import { ActivityBadge } from '../../components/ActivityBadge'
 export function Dashboard () {
   return (
     <>
-      <section className="flex w-full h-20 justify-left gap-4 items-center">
+      <section className="my-5 flex w-full h-fit justify-left gap-4 items-center">
         <div className="relative w-10 h-10 bg-amber-50 rounded-full flex justify-center items-center backdrop-blur-2xl p-2">
           <ProfileIcon/>
           <div className="absolute bottom-0 right-0 w-2 h-2 bg-green-500 rounded-full"></div>
@@ -20,8 +19,6 @@ export function Dashboard () {
           <p><small>Good Morning.</small></p>
           <p><strong>Arturo</strong></p>
         </div>
-
-        <NotificationsIcon className="shadow-md active:scale-95 hover:scale-105 transition-transform cursor-pointer ml-auto w-10 h-10 bg-primary text-primary-foreground p-2 rounded-full"/>
       </section>
 
       <section className="flex gap-10">

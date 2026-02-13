@@ -1,4 +1,4 @@
-import background from '../../../assets/fondo_home.png'
+import background from '../../assets/fondo_home.png'
 import { Logo } from '../../assets/Logo.tsx'
 import { NavLinkCustom } from '../../shared/components/NavLinkCustom.tsx'
 import { CommentCard } from '../../shared/components/CommentCard.tsx'

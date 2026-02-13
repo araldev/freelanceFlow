@@ -9,7 +9,7 @@ import { ProfileIcon } from '../../assets/ProfileIcon'
 
 export function NavBar ({ className, ref, ...props }: ComponentPropsWithRef<ElementType>) {
   return (
-    <aside ref={ref} className={`z-20 w-full h-fit bg-background backdrop-blur-md border-t border-foreground ${className}`} {...props}>
+    <aside ref={ref} className={`z-20 shadow-top w-full h-fit bg-background backdrop-blur-md border-t border-foreground ${className}`} {...props}>
       <nav>
         <ul className="flex items-center w-full h-fit justify-around p-6">
 
