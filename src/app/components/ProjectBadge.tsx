@@ -13,7 +13,7 @@ const StateStyles: Record<ProjectState, string> = {
 }
 
 
-interface ProjectBadgeProps extends ComponentPropsWithRef<ElementType> {
+export interface ProjectBadgeProps extends ComponentPropsWithRef<ElementType> {
   state?: keyof typeof ProjectState | ProjectState
 }
 

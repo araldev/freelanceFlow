@@ -101,6 +101,15 @@
   .nav-area {
     grid-area: nav-area;
   }
+
+  /* Escritorio: Grid con sidebar lateral */
+  @media (min-width: 1024px) {
+    .container-area {
+      grid-template-areas: "nav-area main-area";
+      grid-template-columns: auto 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
 }
 
 
